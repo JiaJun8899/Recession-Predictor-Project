@@ -21,7 +21,7 @@ Main Scripts
 4. `telegrambot.py` is the source code for our telegram bot
    1. `telegramchart.py` has functions to assist the creation of the graphs in the telegram bot
 ********************************************************************
-Viewing or installing our application:
+Installation:
 --------------------------------------------------------------------
 1. Visit our website: [Click here](http://34.87.128.123/)
 2. Installation the application locally using `start.bat`
@@ -97,9 +97,14 @@ ExecStart = /bin/bash /var/www/1002_P1_G5/flaskrun.sh
 WantedBy = multi-user.target 
 ```
 ********************************************************************
+Challenges faced:
+-------------------------------------------------------------------
+1. Lack of understanding of econmoic terms and how it can impact recession
+2. New learning curve such as learning new libraries such as scikitlearn and Flask 
+********************************************************************
 Further improvements:
 -------------------------------------------------------------------
-1. The graphs can be displayed nicer in the html
+1. The graphs can be displayed nicer in the web application
 2. Using more datasets to enhance our machine learning
 ********************************************************************
 File directory:
@@ -191,3 +196,16 @@ File directory:
 ├── Requirements.txt
 └── app.py
 ```
+********************************************************************
+Contributors
+--------------------------------------------------------------------
+**_P1 Group 5_** <br>
+Chen JiaJun 2101351<br> 
+Goh Thiam Aik 2102924 <br>
+Liew Jwo Young 2102109 <br>
+Sim Wei Xuan 2100895 <br>
+Yeo Yi Xuan 2100717
+********************************************************************
+License
+--------------------------------------------------------------------
+Copyright © 2021. [Singapore Institute of Technology](https://www.singaporetech.edu.sg/)

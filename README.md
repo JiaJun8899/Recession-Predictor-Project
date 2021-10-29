@@ -1,5 +1,5 @@
 Project 11: Recession Predictor
-==============================================================
+===================================================================
 This application is a recession predictor for the United States of America. 
 This project used multiple economic indicators to predict a possible recession.
 It uses K-Nearest Neighbors Algorithm to predict the recession.
@@ -8,15 +8,15 @@ This project comes with a telegram bot
 Our hosted webpage: http://34.87.128.123/
 
 Data used is from [Federal Reserve Economic Data](https://fred.stlouisfed.org/)
-***********************************************************************************************************
+********************************************************************
 Important Scripts
----------------------------------------------------------------
+--------------------------------------------------------------------
 1. machinelearning.py
 2. telegrambot.py
 3. app.py
-***********************************************************************************************************
+********************************************************************
 To install on a public server:
-------------------------------------------------------------------
+--------------------------------------------------------------------
 1. Copy `ICT1002_P1_G5_Project_11.tar.gz` to the server
 Run the below commands to complete the installation
 
@@ -67,15 +67,15 @@ sudo systemctl daemon-reload
 sudo systemctl start flask
 sudo systemctl enable flask
 ```
-***********************************************************************************************************
+********************************************************************
 Starting our application:
--------------------------------------------------------------------
+--------------------------------------------------------------------
    1. Go to site: [Click here](http://34.87.128.123/)
    2. Local installation using start.bat
    3. Hosting on your own public server
-*******************************************************************
+********************************************************************
 There are two ways to start Flask (For public server)
--------------------------------------------------------------------
+--------------------------------------------------------------------
 1) ./flaskrun.sh 
 2) Create a system process using the below config. (Assuming the full path is /var/www/1002_P1_G5/) 
 The process will be started automatically during the system boot up. 
@@ -89,14 +89,14 @@ ExecStart = /bin/bash /var/www/1002_P1_G5/flaskrun.sh
 [Install] 
 WantedBy = multi-user.target 
 ```
-***********************************************************************************************************
+********************************************************************
 Further improvements:
 -------------------------------------------------------------------
 1. The function `addrect()` can be more dynamic such that be shown properly in the filter data.
 2. Using more modules 
 ********************************************************************
 File directory:
------------------------------------------------------------------
+--------------------------------------------------------------------
 ```
 ├── app 
 │   ├── generated_datasets 

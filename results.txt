@@ -1,0 +1,1 @@
+According to the KNN model trained using historical data from the past 50 years, there will not be a recession this upcoming month.

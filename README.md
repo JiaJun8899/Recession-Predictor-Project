@@ -1,5 +1,5 @@
 Project 11: Recession Predictor
---------------------------------------------------------------------
+==============================================================
 This application is a recession predictor for the United States of America. 
 This project used multiple economic indicators to predict a possible recession.
 It uses K-Nearest Neighbors Algorithm to predict the recession.
@@ -90,6 +90,11 @@ ExecStart = /bin/bash /var/www/1002_P1_G5/flaskrun.sh
 WantedBy = multi-user.target 
 ```
 ***********************************************************************************************************
+Further improvements:
+-------------------------------------------------------------------
+1. The function `addrect()` can be more dynamic such that be shown properly in the filter data.
+2. Using more modules 
+********************************************************************
 File directory:
 -----------------------------------------------------------------
 ```

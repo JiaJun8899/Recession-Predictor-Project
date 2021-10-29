@@ -99,8 +99,8 @@ WantedBy = multi-user.target
 ********************************************************************
 Further improvements:
 -------------------------------------------------------------------
-1. The function `addrect()` can be more dynamic such that be shown properly in the filter data.
-2. Using more modules 
+1. The graphs can be displayed nicer in the html
+2. Using more datasets to enhance our machine learning
 ********************************************************************
 File directory:
 --------------------------------------------------------------------

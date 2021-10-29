@@ -21,7 +21,8 @@ Arguments are optional, will only create datasets when run without arguments
 
 **Argument 2**
 >1 : runs the model training and testing and recession prediction, outputs results to results.txt.
-<br>Testing accuracy for each model is shown in the graph in generated_datasets/misc_graphs.
+
+Testing accuracy for each model is shown in the graph in generated_datasets/misc_graphs.
 
 Example of running `machinelearning.py` without argument 1 
 ```

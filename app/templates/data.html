@@ -1,0 +1,54 @@
+{% extends "layout.html"%}
+{% block body %}
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9">
+        <form action="/data" method="get">
+          <select id="graph" name="graph">
+            <option value=" " selected disabled>Select data</option>
+            <option value="cpi">Consumer Price Index</option>
+            <option value="unemployment">Unemployment Rates</option>
+            <option value="data_yield">Market Yield Rates</option>
+            <option value="data_industrial">Industrial Production Rate</option>
+            <option value="treasurybill">Treasury Bill Rate</option>
+            <option value="recession">Recession</option>
+            <option value="capcity">Capacity Utilization</option>
+            <option value="multiple">Filter options</option>
+          </select>
+          <div id="date_filter" style="display:none;">
+            <select name="filter1">
+              {% for date in datelist %}
+                <option value="{{ date }}">{{date}}</option>
+              {% endfor %}
+            </select>
+            <select name="filter2">
+              {% for date in datelist2 %}
+                <option value="{{ date }}">{{date}}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <span><input type="submit" class="btn btn-primary"></span>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="chart" class="chart" style="max-width: 90%">
+  {% if graphJSON %}
+    <script>
+      var graphs = {{ graphJSON | safe }}
+      Plotly.plot('chart', graphs, {});
+    </script>
+    <div><h6 style="text-align:center;">{{datamsg}}</h6></div>
+    <h4 style="text-align:center;"><a href="{{ url_for ('.downloadFile') }}">Download the data</a></h4>
+    {% endif %}
+    {% if message %}
+    <div class="row">
+        <article class="col-sm">
+          <h3 style="text-align:center;">{{message}}</h3>
+        </article>
+    </div>
+    {%endif%}
+  </div>
+</main>
+{% endblock %}

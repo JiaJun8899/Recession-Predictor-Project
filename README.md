@@ -4,9 +4,14 @@ This application is a recession predictor for the United States of America.
 This project used multiple economic indicators to predict a possible recession.
 It uses K-Nearest Neighbors Algorithm to predict the recession.
 The project is coded in python and has a front-end of HTML and Javascript
-This project comes with a telegram bot
+This project comes with a telegram bot addon that this start.bat does not run as 
+it is currently hosted on the same google cloud server.
 
-Our hosted webpage: http://34.87.128.123/
+Video and report are found in the `Video & Report` folder
+
+The crawled data are in `generated_datasets` folder and their subfolders
+
+Our hosted webpage: [Project 11 Website](http://34.87.128.123/)
 
 Data used is from [Federal Reserve Economic Data](https://fred.stlouisfed.org/)
 ********************************************************************
@@ -25,7 +30,7 @@ Installation:
 --------------------------------------------------------------------
 1. Visit our website: [Click here](http://34.87.128.123/)
 2. Installation the application locally using `start.bat`
-> Note that it will take awhile for the necessary libararies and data to be crawled.
+> Note that it will take very long for the necessary libararies and data to be crawled.
 4. Hosting on your own public server view instructions down below
 ********************************************************************
 To install on a public server:
@@ -100,12 +105,14 @@ WantedBy = multi-user.target
 Challenges faced:
 -------------------------------------------------------------------
 1. Lack of understanding of econmoic terms and how it can impact recession
-2. New learning curve such as learning new libraries such as scikitlearn and Flask 
+2. New learning curve such as learning new libraries such as scikitlearn and Flask
+3. Uanble to run the telegram bot simultaneously
 ********************************************************************
 Further improvements:
 -------------------------------------------------------------------
 1. The graphs can be displayed nicer in the web application
 2. Using more datasets to enhance our machine learning
+3. Hosting our telegram bot on a public cloud server
 ********************************************************************
 File directory:
 --------------------------------------------------------------------
@@ -165,7 +172,7 @@ File directory:
 │   │   │   ├── create_dataset.py 
 │   │   │   └── create_plots.py 
 │   │   ├── machinelearning.py
-│   │   ├── 
+│   │   ├── README2.md
 │   │   ├── model 
 │   │   │   └── model_train.py 
 │   │   └── results.txt 

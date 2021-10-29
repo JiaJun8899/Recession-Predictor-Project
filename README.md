@@ -76,7 +76,7 @@ Starting our application:
 ********************************************************************
 There are two ways to start Flask (For public server)
 --------------------------------------------------------------------
-1) ./flaskrun.sh 
+1) ```bash ./flaskrun.sh``` 
 2) Create a system process using the below config. (Assuming the full path is /var/www/1002_P1_G5/) 
 The process will be started automatically during the system boot up. 
 ```bash

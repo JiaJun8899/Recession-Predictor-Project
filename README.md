@@ -3,17 +3,23 @@ Project 11: Recession Predictor
 This application is a recession predictor for the United States of America. 
 This project used multiple economic indicators to predict a possible recession.
 It uses K-Nearest Neighbors Algorithm to predict the recession.
+The project is coded in python and has a front-end of HTML and Javascript
 This project comes with a telegram bot
 
 Our hosted webpage: http://34.87.128.123/
 
 Data used is from [Federal Reserve Economic Data](https://fred.stlouisfed.org/)
 ********************************************************************
-Important Scripts
+Main Scripts
 --------------------------------------------------------------------
-1. machinelearning.py
-2. telegrambot.py
-3. app.py
+1. `start.bat` is the batch file to start the application on local server.
+2. `app.py` is the source code for the flask UI
+3. `machinelearning.py` is the source code for our machine learning
+   1.  `create_dataset.py` is the datacrawler to generate the needed csv files for the entire program
+   2.  `create_plots.py` is to create a .png of each data crawled
+   3.  `model_train.py` is the our machine learning script
+4. `telegrambot.py` is the source code for our telegram bot
+   5. `telegramchart.py` has functions to assist the creation of the graphs in the telegram bot
 ********************************************************************
 To install on a public server:
 --------------------------------------------------------------------

@@ -1,8 +1,12 @@
 machinelearning.py
 ============================================================
-The whole program is controlled from the `machinelearning.py` file.
+This project is controlled from the `machinelearning.py` file. The program's main purpose is to
+1. Crawl the data using fredapi
+2. Running of the machine learning script
+3. Plotting of graphs from datasets
 
-`machinelearning.py` accepts arguments:<br>
+`machinelearning.py` accepts arguments:
+
 Arguments are optional, will only create datasets when run without arguments
 
 **Argument 1**
@@ -24,7 +28,7 @@ Example of running `machinelearning.py` without argument 1
 python machinelearning.py none 1
 ```
 This will run the data crawler and the model test scripts but will not create any graphs.
-
+****************************************************************
 The data crawling is run daily at midnight using the below crontab. 
 -----------------------------------------------------------------
 ```

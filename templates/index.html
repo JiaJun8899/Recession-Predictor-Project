@@ -1,0 +1,25 @@
+{% extends "layout.html"%}
+{% block body %}
+    <header class="jumbotron text-center">
+        <h1 class ="display-4">ICT 1002 Recession Predictor</h1>
+        <h2>Project made by: P2 Group 4</h2>
+    </header>
+    <main class="container">
+        <section>
+            <div class="row">
+                <article class="col-sm">
+                    <h3>Data Set</h3>
+                    <a href="data"><img src="{{url_for('static', filename='graph_stock.png')}}" align="middle"/></a>
+                </article>
+                <article class="col-sm">
+                    <h3>Our Task</h3>
+                    <a href="task"><img src="{{url_for('static', filename='task_stock2.png')}}" align="middle"></a>
+                </article>
+                <article class="col-sm">
+                    <h3>Our Telegram bot</h3>
+                    <a href="https://t.me/project1002Bot"><img src="{{url_for('static', filename='tele_icon.png')}}" align="middle" style="max-width:60%; max-height:60%;"></a>
+                </article>
+            </div>
+        </section>
+    </main>
+{% endblock %}

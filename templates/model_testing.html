@@ -1,0 +1,29 @@
+{% extends "layout.html"%}
+{% block body %}
+    <header class="jumbotron text-center">
+        <h1>Model Testing</h1>
+    </header>
+    <main class="container">
+        <div class="row">
+            <article class="col-sm">
+                <h3 style="text-align:center;">{{results}}</h3>
+            </article>
+        </div>
+        <div id="chart" class="chart" style="max-width: 90%">
+            {% if modelJSON %}
+                <script>
+                    var graphs = {{ modelJSON | safe }}
+                    Plotly.plot('chart', graphs, {});
+                </script>
+            {% endif %}
+        </div>
+        <div>
+            <div>
+                <p>
+                    The data used to carry out the prediction is the most recent monthly change shown in the graph above. The model we used was the K Nearest Neighbors (KNN) model. We compared this against the Support Vector Machine and Logistic Regression models and found that KNN performed the best. The cross validation scores are shown below.
+                </p>
+                <img src="{{url_for('static', filename='xvalidation.png')}}" align="center">
+            </div>
+        </div>
+    </main>
+{% endblock %}

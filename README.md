@@ -19,7 +19,7 @@ Main Scripts
    2.  `create_plots.py` is to create a .png of each data crawled
    3.  `model_train.py` is the our machine learning script
 4. `telegrambot.py` is the source code for our telegram bot
-   5. `telegramchart.py` has functions to assist the creation of the graphs in the telegram bot
+   1. `telegramchart.py` has functions to assist the creation of the graphs in the telegram bot
 ********************************************************************
 To install on a public server:
 --------------------------------------------------------------------

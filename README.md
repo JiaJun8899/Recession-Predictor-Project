@@ -1,6 +1,6 @@
 Project 11: Recession Predictor
 ===================================================================
-This application is a recession predictor for the United States of America. 
+This application is a recession predictor for the United States of America.
 This project used multiple economic indicators to predict a possible recession.
 It uses K-Nearest Neighbors Algorithm to predict the recession.
 The project is coded in python and has a front-end of HTML and Javascript

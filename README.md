@@ -21,6 +21,13 @@ Main Scripts
 4. `telegrambot.py` is the source code for our telegram bot
    1. `telegramchart.py` has functions to assist the creation of the graphs in the telegram bot
 ********************************************************************
+Viewing or installing our application:
+--------------------------------------------------------------------
+1. Visit our website: [Click here](http://34.87.128.123/)
+2. Installation the application locally using `start.bat`
+> Note that it will take awhile for the necessary libararies and data to be crawled.
+4. Hosting on your own public server view instructions down below
+********************************************************************
 To install on a public server:
 --------------------------------------------------------------------
 1. Copy `ICT1002_P1_G5_Project_11.tar.gz` to the server
@@ -74,16 +81,10 @@ sudo systemctl start flask
 sudo systemctl enable flask
 ```
 ********************************************************************
-Starting our application:
---------------------------------------------------------------------
-   1. Go to site: [Click here](http://34.87.128.123/)
-   2. Local installation using start.bat
-   3. Hosting on your own public server
-********************************************************************
 There are two ways to start Flask (For public server)
 --------------------------------------------------------------------
-1) ```bash ./flaskrun.sh``` 
-2) Create a system process using the below config. (Assuming the full path is /var/www/1002_P1_G5/) 
+1. ```bash ./flaskrun.sh``` 
+2. Create a system process using the below config. (Assuming the full path is /var/www/1002_P1_G5/) 
 The process will be started automatically during the system boot up. 
 ```bash
 [Unit] 

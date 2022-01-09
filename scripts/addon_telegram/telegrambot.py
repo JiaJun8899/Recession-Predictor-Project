@@ -4,7 +4,7 @@ from telegramchart import *
 
 
 #import TELEGRAM API KEY HERE
-my_secret = '2018817369:AAE6G4FVD3qSwRonngAa7-wAX92bVpyKUec'
+my_secret = 
 bot = telebot.TeleBot(my_secret)
 
 
